@@ -1,0 +1,21 @@
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		//command line arguments
+		System.out.println(args[0]);
+		System.out.println(args[1]);
+		System.out.println(args[0] + args[1]);
+		System.out.println(args[2]);
+		System.out.println(args[3]);
+		System.out.println(args[2] + args[3]);
+		
+		int x = Integer.parseInt(args[2]);
+		int y = Integer.parseInt(args[3]);
+		int z = (int)((Math.random() * (x - y) + 1 + x));
+		
+		System.out.println(x + y);
+		System.out.println("Random number is : " + z);
+		
+	}
+}
