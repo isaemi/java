@@ -1,0 +1,96 @@
+ublic class test1 {
+
+	public static void main(String[] args) {
+		// <2>
+		// Keywords: public, class, int, float, void - describes in different colors
+		// Identifiers: user defined names given to the classes, methods, and variable
+		/*Rules to create Identifiers
+		 * -It can be created using A-Z, a-z, digits(0-9), underscore (_) and dollar signs ($)
+		 * -It cannot start with a digit
+		 * - Space is not allowed between the identifier
+		 * - It should not be a reserved word
+		 * - It is case sensitive
+		 * - It can be of any length
+		 */
+		// Literals
+		
+		int a = 10; //Integer Literals (10)
+		double b = 10.25; //Floating Point (10.25)
+		char gender = 'M'; //Character (M)
+		String name = "John"; //String (John)
+		boolean flag = true; //boolean(True/false)
+		
+		//Variables
+		int c = 1000; //int
+		double d = 1000.25; //double
+		
+		//Data Types
+		int e = 10000; //10000value
+		long f = 1000000000;
+		/*Data Type has 2 types
+		 * -primitive: integer, float, double, etc
+		 * -non primitive: String, array
+		 */
+		
+		// <3>
+		byte g = 127; //cannot save -129 or 128, cuz range is -128(2^8) - 0 - 127(2^8-1) : 1 byte 8 bits
+		short h = 23323;
+		int i = 3232;
+		long j = 2332322332L; //use L at the end when you cannot store the value
+		
+		float k= 10000.12F; //use F
+		double l = 1000012;
+		
+		char ch = 'M';
+		boolean z = true;
+		
+		System.out.println(" g : " + g);
+		System.out.println(" h : " + h);
+		
+		// <4>
+		//type casting or type promotion
+		long m = 11111;
+		int n = (int) m;
+		int o = 2222;
+		long p = o;
+		
+		// <5>
+		//ASCII(American standard code for information intelligence
+		char ch2 = 'A'; //65
+		char ch3 = 0x48; //48 is an hexadecimal number equivalent to 'H'
+		char ch4 = 0x4828;
+		char ch5 = 0x2002; //nothing stored
+		int q = (int)ch2;
+		System.out.println(q); // store 65
+		System.out.println(ch3);
+		System.out.println(ch4);
+		System.out.println(ch5);
+		System.out.println("asdfasdf\nasdfsdf"); // \n new line
+		System.out.println("asdfeasd\tfasdfas"); // \t space
+		System.out.println("Hellow \"and\" hi"); // use \back slash to add "
+		
+		/*
+		 * \n: New Line
+		 * \t: Tab
+		 * \b: backspacek
+		 * \r: carriage return
+		 * \": Prints a "(Quote)
+		 * \ : To print a \
+		 */
+		 
+		// <6>
+		// String
+		String str = "Hello everybody. How are you";
+		System.out.println(str);
+		String s = "Hello";
+		System.out.println(s + 5 + 2);
+		String s2 = "Hello";
+		System.out.println(s + (5 + 2));
+		String s3 = "Hello";
+		System.out.println(5 + 2 + s);
+		String s4 = "Hello";
+		System.out.println(5 + 2 + s + 5 + 2);
+
+	}
+
+}
