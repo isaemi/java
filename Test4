@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Test4 {
+
+	public static void main(String[] args) {
+		// Inputing data through keyboard
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter : ");
+		int a = sc.nextInt();
+		float b = sc.nextFloat();
+		double c = sc.nextDouble();
+		String d = sc.next(); // after space it cannot read
+		//String d = sc.nextLine(); it does read after the space
+		char ch = sc.next().charAt(2); //character at () this number stored
+		
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+		System.out.println(ch);
+		
+		System.out.println("Enter 2 no: ");
+		int e = sc.nextInt();
+		int f = sc.nextInt();
+		int sum = e + f;
+		
+		System.out.println("The sun is : " + sum);
+	}
+
+}
