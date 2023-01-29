@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Test5 {
+
+	public static void main(String[] args) {
+		// if statement
+		
+		int a = 90, b = 777;
+		if (a > b)
+		{
+			System.out.println("a is greater");
+		}
+		else
+		{
+			System.out.println("b is greater");
+		}
+		
+		// Even/Odd numbers
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a no: ");
+		int c = sc.nextInt();
+		if (c%2 == 0) {
+			System.out.println("Even number");
+		}
+		else
+		{
+			System.out.println("Odd number");
+		}
+		
+		// 3 numbers
+		System.out.println("Enter 3 no : ");
+		int d = sc.nextInt();
+		int e = sc.nextInt();
+		int f = sc.nextInt();
+		if (d > e && d > f) 
+			System.out.println("Largest : " + d);
+		else if (e > f)
+			System.out.println("Largest : " + e);
+		else
+			System.out.println("Largest : " + f); // it is optional to use curly bracket
+		
+	}
+}
