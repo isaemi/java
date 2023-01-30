@@ -1,0 +1,32 @@
+//Resuing Constructors using 'this'
+class Example5
+{
+	int id;
+	String name;
+	int age;
+
+	Example5 (int id, String name)
+	{
+		this.id = id;
+		this.name = name;
+	}
+	Example5 (int id, String name, int age)
+	{
+		this(id,name);	//Example5(111, "John");
+		this.age = age;
+	}
+	void show()
+	{
+		System.out.println(id);
+		System.out.println(name);
+		System.out.println(age);
+	}
+}
+public class Test22 {
+
+	public static void main(String[] args)
+	{
+		Example5 s1 = new Example5(111, "John", 20);
+		s1.show();
+	}
+}
