@@ -1,0 +1,46 @@
+//Type of Constructor
+class Customer
+{
+	int id;
+	String name;
+	
+	Customer()
+	{
+		System.out.println("Id : " + id);
+		System.out.println("Name : " + name);
+	}
+	
+	Customer(int cid, String cname)
+	{
+		id = cid;
+		name = cname;
+
+		System.out.println("Id : " + id);
+		System.out.println("Name : " + name);
+	}
+	Customer(int cid, String cname, double cbalance)
+	{
+		id = cid;
+		name = cname;
+				
+		System.out.println("Id : " + id);
+		System.out.println("Name : " + name);
+		System.out.println("Balance : " + cbalance);
+	}
+}
+public class Test17 {
+
+	public static void main(String[] args) {
+		Customer c1 = new Customer(111, "John");
+		Customer c2 = new Customer();
+		Customer c3 = new Customer(222, "Rahul", 40000);
+	}
+
+}
+/* - Default Constructor: Constructor having no parameter is known as default constructor.
+ *	 If we do not define a constructor in a class, then compiler createds in the default constructor.
+ *	 And if we created a constructor with argument or without arguments then the compiler does not create a default constructor.
+ *	 Default constructor provides the default values to the variables of the object like 0 in and int variable, null with a String variable etc.
+ * - Parameterized Constructor: A Constructor that has parameters is known as parameterized constructor.
+ * 	 The number of parameters passed with the object will decide which constructor is to be called.
+ */ 
