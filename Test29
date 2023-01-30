@@ -1,0 +1,65 @@
+class Employee
+{
+	int id;
+	String name;
+	
+	void setData(int id, String name)
+	{
+		this.id = id;
+		this.name = name;
+	}
+	void showEmp()
+	{
+		System.out.println("ID : " + id);
+		System.out.println("Name : " + name);
+	}
+}
+class phpDev extends Employee
+{
+	double salary;
+	
+	void setphpDev(int pid, String pname, double psalary)
+	{
+		setData(id,name);
+		salary = psalary;
+	}
+	void showphpDev()
+	{
+		showEmp();
+		System.out.println("Salary : " + salary);
+		System.out.println();
+	}
+}
+class javaDev extends Employee
+{
+	double salary;
+	double hra;
+	
+	void setjavaDev(int jid, String jname, double jsalary, double jhra)
+	{
+		id = jid;
+		name = jname;
+		salary = jsalary;
+		hra = jhra;
+	}
+	void showjavaDev()
+	{
+		showEmp();
+		System.out.println("Salary : " + salary);
+		System.out.println("Hra : " + hra);
+	}
+}
+public class Test29 {
+
+	public static void main(String[] args) {
+		phpDev p1 = new phpDev();
+		p1.setphpDev(111,"Raj",5000);
+		p1.showphpDev();
+		
+		javaDev p2 = new javaDev();
+		p2.setjavaDev(222, "Anna", 1000, 500);
+		p2.showjavaDev();
+		
+	}
+
+}
