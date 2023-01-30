@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		//Array 1D
+		
+		//int a=10, b=20, c=30;
+		int []a = {10, 20, 30};
+		System.out.println(a[0]);
+		System.out.println(a[1]);
+		System.out.println(a[2]);
+		
+		int []b = {10, 20, 30, 43, 54, 6, 45, 45, 54};
+		for (int i=0; i<b.length; i++)
+		{
+			System.out.println(b[i] + " ");
+		}
+		
+		double []c = {10.33, 4.55, 7.44};
+		for (int j=0; j<c.length; j++)
+		{
+			System.out.println(c[j]+ " ");
+		}
+		
+		char []ch = {'a', 'x', 'u'};
+		for(int k=0; k<ch.length; k++)
+		{
+			System.out.println(ch);
+		}
+		
+		Scanner sc = new Scanner(System.in);
+		int []x = new int[5];
+		System.out.println("Enter 5 no : ");
+		for (int l=0; l<x.length; l++)
+		{
+			x[l]=sc.nextInt();
+		}
+		System.out.print("Array element are : ");
+		for (int l=0; l<x.length; l++)
+		{
+			if(x[l]%2 == 0)
+			System.out.print(x[l] + " ");
+		}
+	}
+}
