@@ -1,0 +1,31 @@
+// Calling a Constructor using 'this'
+class Example4
+{
+	int id;
+	String name;
+	
+	Example4()
+	{
+		this(222, "Saemi"); //Example4(); cause error
+		System.out.println("Program started.....");
+	}
+	
+	Example4(int id, String name)
+	{
+		this.id = id;
+		this.name = name;
+	}
+	void show()
+	{
+		System.out.println(id);
+		System.out.println(name);
+	}
+
+}
+public class Test21 {
+
+	public static void main(String[] args) {
+		Example4 s1 = new Example4();
+		s1.show();
+	}
+}
