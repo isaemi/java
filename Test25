@@ -1,0 +1,14 @@
+//static method
+public class Test25 {
+
+	static void show()
+	{
+		System.out.println("This is show method");
+	}
+	public static void main(String[] args) {
+		
+		show();
+
+	}
+
+}
