@@ -1,0 +1,17 @@
+//static blocks
+public class Test26 {
+	
+	static
+	{
+		System.out.println("I am 1st static");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("I am main");
+	}
+	static
+	{
+		System.out.println("I am 2nd static");
+	}
+
+}
