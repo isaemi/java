@@ -1,0 +1,33 @@
+// calling object using this
+class Example3
+{
+	int id;
+	String name;
+	int age;
+	
+	Example3(int id, String name, int age)
+	{
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	
+	void show(Example3 s)
+	{
+		System.out.println(s.id);
+		System.out.println(s.name);
+		System.out.println(s.age);
+	}
+	void showData() 
+	{
+		show(this);		// show(Student s)
+	}
+}
+public class Test20 {
+
+	public static void main(String[] args) {
+		
+		Example3 s1 = new Example3 (111, "John",33);
+		s1.showData();
+	}
+}
