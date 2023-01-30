@@ -1,0 +1,29 @@
+class emp
+{
+	int id;
+	String name;
+}
+class phpDeveloper extends emp
+{
+	int yearofexp;
+	double salary;
+}
+class javaDeveloper
+{
+	double basicSalary;
+	double hra;
+}
+class nwEng
+{
+	double basicSalary;
+	double hra;
+	double da;
+}
+public class Test28 {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}
