@@ -1,0 +1,39 @@
+// constructor
+class Example
+{
+	int x;
+	Example()
+	{
+		x = 10;
+		System.out.println("Hello");
+		System.out.println("Hello " + x);
+	}
+	void show()
+	{
+	System.out.println("Hi");
+	}
+}
+public class Test16 {
+
+	public static void main(String[] args) {
+		Example e1 = new Example();
+		e1.show();
+	}
+}
+/* Constructor
+ * A Constructor is similar to method but it has the same that of the class.
+ * It is called when an instance of the class is created or object is created.
+ * - A Constructor has the same name with the class
+ * - It is called automatically when an object is created using new
+ * - One class can have multiple constructors
+ * - It is basically used to initialize the members variable
+ * - It is optional to use the access modifiers (See the Encapsulation Topic) to access with constructor to control its access
+ * - It cannot be abstract, static or final
+ * - If we compare the method and constroctor then the following points may be realize:
+ * 		- Constructor has the same with the class whereas method name must be different
+ * 		- Constructor does not return any values where as a method has to return a value otherwise you need to use void
+ * 		- Constructor is called only once during object creation where as a method can be called any number of times
+ * There are two types of constructor in java
+ * - Default Constructor (no-arg constructor)
+ * - Parameterized Constructor
+*/
