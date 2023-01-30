@@ -1,0 +1,29 @@
+//method parameters
+//return types
+
+public class Test15 {
+
+	void method1()
+	{
+		System.out.println("I am in method1");	
+	}
+	void method2(int x, int y)
+	{
+		int z = x + y;
+		System.out.println("Sum : " + z);
+	}
+	double method3(double x, double y)
+	{
+		double z = x * y;
+		return z;
+	}
+	public static void main(String[] args) {
+
+		Test15 t1 = new Test15();
+		t1.method1();
+		t1.method2(10, 20);
+		double m = t1.method3(50, 3);
+		System.out.println(m);
+		System.out.println(t1.method3(40, 5)); //one line
+	}
+}
