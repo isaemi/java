@@ -1,0 +1,38 @@
+public class Test8 {
+
+	public static void main(String[] args) {
+		// for loop
+		
+		int i = 1;
+		while (i <=5)
+		{
+			System.out.println("hello");
+			i++;
+		}
+		
+		for(int j = 1; j<=5; j++)
+		{
+			System.out.println("Hi");
+		}
+		for(int k=1; k<10; k++)
+			System.out.print(k + " ");
+		
+		for(int L=10; L>=1; L--)
+			System.out.print(L + " ");
+		
+		for(double m=10; m>=1; m = m - 0.5)
+			System.out.println(m + " ");
+		
+		// nested loop
+		
+		for(int n=1; n<=5; n++)
+		{
+			for(int o=1; o<=n; o++)
+			{
+				System.out.print(n);	//check the difference n & o
+			}
+			System.out.println();
+		}
+	}
+
+}
