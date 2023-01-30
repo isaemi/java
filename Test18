@@ -1,0 +1,16 @@
+// this keyword
+class Example1
+{
+	Example1()
+	{
+	System.out.println(this);
+	}
+}
+public class Test18 {
+
+	public static void main(String[] args) {
+		Example1 e1 = new Example1();
+		System.out.println(e1);
+		Example1 e2s = new Example1();
+	}
+}
