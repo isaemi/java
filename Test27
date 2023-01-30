@@ -1,0 +1,33 @@
+//Inheritance
+
+//Parent
+class A
+{
+	int x = 20;
+}
+//Child
+class B extends A
+{
+	void showB()
+	{
+		System.out.println("in B: " + x);
+	}
+}
+//Child
+class C extends A
+{
+	void showC()
+	{
+		System.out.println("in C : " + x);
+	}
+}
+public class Test27 {
+
+	public static void main(String[] args) {
+		B t1 = new B();
+		C t2 = new C();
+		t1.showB();
+		t2.showC();
+	}
+
+}
