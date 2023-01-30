@@ -1,0 +1,27 @@
+// this with instance variable
+class Example2
+{
+	int id;
+	String name;
+	
+	Example2(int cid, String cname)
+	{
+		this.id = cid;
+		this.name = cname;
+	}
+	
+	void show()
+	{
+		System.out.println(id);
+		System.out.println(name);
+	}
+}
+public class Test19 {
+
+	public static void main(String[] args) {
+		
+		Example2 e1 = new Example2(111, "John");
+		e1.show();
+	}
+
+}
