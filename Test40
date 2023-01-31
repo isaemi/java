@@ -1,0 +1,35 @@
+//method overriding - when the same method is declared in child class and parent class
+class Bank
+{
+	void welcome()
+	{
+		System.out.println("Welcome to our bank");
+	}
+}
+class HDFC extends Bank
+{
+	void welcome()
+	{
+		System.out.println("Welcome to hdfc");
+	}
+}
+class ICICI extends HDFC
+{
+	void welcome()
+	{
+		System.out.println("Welcome to icici");
+	}
+}
+public class Test40 {
+
+	public static void main(String[] args) {
+		Bank b1 = new Bank();
+		b1.welcome();
+		Bank b2 = new HDFC();
+		b2.welcome();
+		Bank b3 = new ICICI();
+		b3.welcome();
+
+	}
+
+}
