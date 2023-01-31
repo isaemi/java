@@ -1,0 +1,52 @@
+//abstract class - highlighting the implementation details and switching all of the functionality to the user
+abstract class Shape1
+{
+	abstract void area();
+	void t()
+	{
+		System.out.println("Hello");
+	}
+}
+class Square extends Shape1
+{
+	void area()
+	{
+		double x = 5;
+		double y = x * x;
+		System.out.println("Area of square : " + y);
+	}
+}
+class Rect extends Shape1
+{
+	void area()
+	{
+		double x = 50, y = 10;
+		double z = x * y;
+		System.out.println("Area of rect : " + z);
+	}
+}
+public class Test42 {
+
+	public static void main(String[] args) {
+		
+		Shape1 sqr = new Square();
+		sqr.area();
+		
+		Shape1 rec = new Rect();
+		rec.area();
+		
+		Shape1 s = new Rect();
+		s.t();
+		
+	}
+
+}
+/*Abstract class
+ * Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+ * It only shows only essential things to the user and hides the internal details.
+ * - abstract keyword is used to declare an abstract method
+ * - An abstract class may or may not have abstract method
+ * - only an abstract class can have abstract methods
+ * - It cannot bee instantiated Or it can ahve no object of its own
+ * - It can also have constructor, final method and static method  
+ */
