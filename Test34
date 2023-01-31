@@ -1,0 +1,29 @@
+//accessing methods using super
+class Employee3
+{
+	void message()
+	{
+		System.out.println("I am an employee.");
+	}
+}
+class JavaDev3 extends Employee3
+{
+	void message()
+	{
+		System.out.println("I am a Java Developer");
+	}
+	void show()
+	{
+	super.message();
+	this.message();	// this is optional
+	}
+}
+public class Test34 {
+
+	public static void main(String[] args) {
+
+		JavaDev3 d1 = new JavaDev3();
+		d1.show();
+	}
+
+}
