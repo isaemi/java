@@ -1,0 +1,33 @@
+interface Bank2
+{
+	double rateOfInt();
+}
+abstract class Customer2
+{
+	abstract void show();
+}
+class CIBC extends Customer2 implements Bank2
+{
+
+	@Override
+	public double rateOfInt() {
+		
+		return 6.5;
+	}
+
+	@Override
+	void show() {
+		System.out.println("Your rate of Int : " + rateOfInt());
+		
+	}
+	
+}
+public class Test44 {
+
+	public static void main(String[] args) {
+	
+		CIBC c1 = new CIBC();
+		c1.show();
+	}
+
+}
