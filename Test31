@@ -1,0 +1,40 @@
+//hierarchical
+class ABCD
+{
+	int x = 10;
+	void methodA()
+	{
+		System.out.println("method A and x : " + x);
+	}
+}
+class AB2 extends ABCD
+{
+	int y = 20;
+	void methodB()
+	{
+		System.out.println("method B and y: " + y);
+	}
+}
+class CD2 extends ABCD
+{
+	int z = 20;
+	void methodC()
+	{
+		System.out.println("method C ");
+		System.out.println(x);
+		System.out.println(z);
+	}
+}
+public class Test32 {
+
+	public static void main(String[] args) {
+		AB2 x1 = new AB2();
+		x1.methodA();
+		x1.methodB();
+		
+		CD2 x2 = new CD2();
+		x2.methodA();
+		x2.methodC();
+	}
+
+}
