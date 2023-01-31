@@ -1,0 +1,21 @@
+//ambiguity
+class Example39
+{
+	void add(int a, long b)
+	{
+		System.out.println("Hello");
+	}
+	void add(long a, int b)
+	{
+		System.out.println("Hi");
+	}
+}
+public class Test39 {
+
+	public static void main(String[] args) {
+
+		Example39 e1 = new Example39();
+		e1.add(10,20);
+	}
+
+}
