@@ -1,0 +1,30 @@
+//method overloading - a method same name, but different parameter list
+class Example37
+{
+	int add(int a, int b)
+	{
+		return (a+b);
+	}
+	double add(double a, double b)
+	{
+		return (a+b);
+	}
+	int add(int a, int b, int c)
+	{
+		return(a+b+c);
+	}
+}
+public class Test37 {
+
+	public static void main(String[] args) {
+
+		Example37 e1 = new Example37();
+		int x = e1.add(10,20);
+		int y = e1.add(10, 20,30);
+		double z = e1.add(10.25, 5.7);
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+
+}
