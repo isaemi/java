@@ -1,0 +1,33 @@
+//type of inheritance
+/*
+ * Single
+ * Multilevel
+ * Hierarchical
+ */
+
+//Single
+class ABC
+{
+	int x = 10;
+	void methodA()
+	{
+		System.out.println("method A and x : " + x);
+	}
+}
+class DEF extends ABC
+{
+	int y = 20;
+	void methodB()
+	{
+		System.out.println("method B and y: " + y);
+	}
+}
+public class Test30 {
+
+	public static void main(String[] args) {
+		DEF x1 = new DEF();
+		x1.methodA();
+		x1.methodB();
+	}
+
+}
