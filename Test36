@@ -1,0 +1,24 @@
+// polymorphism - allows us to perform a single action in different ways
+class Shape
+{
+	void area(int x)
+	{
+		
+	}
+	void area(int x, int y)
+	{
+		
+	}
+	void area(double x, double y, double z)
+	{
+		
+	}
+}
+public class Test36 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
