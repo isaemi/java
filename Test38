@@ -1,0 +1,21 @@
+//type promotion
+class Example38
+{
+	double add(int a, double b)
+	{
+		return (a + b);
+	}
+}
+public class Test38 {
+
+	public static void main(String[] args) {
+
+		Example38 e1 = new Example38();
+		
+		System.out.println(e1.add(10,20));
+		System.out.println(e1.add(10,20.5f));
+		System.out.println(e1.add(10,20.57));
+		System.out.println(e1.add('a','b'));
+	}
+
+}
