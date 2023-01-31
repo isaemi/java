@@ -1,0 +1,29 @@
+interface A1
+{
+	void showA();
+}
+interface B1
+{
+	void showB();
+}
+class C1 implements A1,B1
+{
+	public void showA()
+	{
+		System.out.println("Hello");
+	}
+	public void showB()
+	{
+		System.out.println("Hi");
+	}
+}
+public class Test45 {
+
+	public static void main(String[] args) {
+		C1 t1 = new C1();
+		t1.showA();
+		t1.showB();
+
+	}
+
+}
