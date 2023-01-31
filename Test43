@@ -1,0 +1,35 @@
+//interface - fully abstract class. It includes a group of abstract methods or methods without body
+interface line
+{
+	int max_len = 10;
+	abstract void draw();
+}
+class Rect2 implements line
+{
+	public void draw()
+	{
+		System.out.println("Code to draw a rectangle");
+		System.out.println("Max len : " + max_len);
+	}
+}
+public class Test43 {
+
+	public static void main(String[] args) {
+		
+		line l1 = new Rect2();
+		l1.draw();
+		// cannot create an object like --> line l2 = new line();
+	}
+
+}
+/* Interface
+ * Interface is a fully abstract class. It includes a group of abstract methods or methods without body
+ * - An interface is declared using interface keyword
+ * - All the methods of an interface are abstract
+ * - It cannot be instantiated
+ * - It cannot contain constuctors
+ * - It cannot contain instance field but it can contain static and fianl fields
+ * - An interface is not extended but it is implemented by a class
+ * - It is used to achieve multiple inheritanceswhich are not possible in normal class
+ * When the compiler automatically converts the data members with 'public static final' and methods to 'public abstract' 
+*/
