@@ -1,0 +1,30 @@
+//accessing parent class constructor using super
+class Employee4
+{
+	double salary;
+
+	Employee4()
+	{
+		System.out.println("I am an Employee");
+	}
+	Employee4(int id, double salary)
+	{
+		System.out.println("Id " + id);
+		System.out.println("My salary is " + salary);
+	}
+}
+class JavaDev4 extends Employee4
+{
+	JavaDev4()
+	{
+
+		super(11, 50000); // Employee()
+	}
+}
+public class Test35 {
+
+	public static void main(String[] args) {
+		JavaDev4 d1 = new JavaDev4();
+	}
+
+}
