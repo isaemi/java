@@ -1,0 +1,18 @@
+//abstraction - process of hiding the implementation details and sewing all of the functionality to the user.
+//It only serves essential things to the user and hides the internal details
+abstract class a41  //1
+{
+	abstract void interest();
+}
+interface b41  //2
+{
+	abstract void interest2();
+}
+public class Test41 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
