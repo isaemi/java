@@ -1,0 +1,32 @@
+// Collection Framework
+			
+
+class Test65
+{
+	public static void main(String[] args)
+	{
+		//1000 values
+		int a[] = new int[1000];
+	}
+}
+/* Fixed size
+ * Homogenious
+ * complex data structure
+ * The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.
+ * or Any group of individual objects which are represented as a single unit is known as the collection of the objects.
+ * The Java Collection Framework provide a set of
+ *  - interfaces(List, Queue, Set etc)
+ *  - classes (ArrayList, Vector, LinkedList, HashSet, TreeSet etc)
+ *  to imprement various data structures and algoritms.
+ *  Collection interface is the root interface and many classes and interfaces are inherited from it.
+ */
+
+/* Important Methods of collections
+ * add(): insert the specified element to the collection
+ * size(): returns the size of the collection
+ * remove(): remove the specified element from the collection
+ * remove(): remove the specified element from the collection
+ * iterator(): returns an iterator to access elements of the collection
+ * addAll(): remove all the elements of the specified collection
+ * clear(): removes all the elements all the elements of the collections 
+ */
