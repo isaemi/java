@@ -1,0 +1,26 @@
+//try
+//catch
+//finally
+
+public class Test51
+{
+
+	public static void main(String[] args) 
+	{
+		try {
+			int x = 10, y = 0; //--> cannot devided zero
+			int z = x/y;
+			System.out.println("z = " + z);
+		}
+		catch (ArithmeticException ae)
+		{
+			System.out.println("Cannot divided by 0" + ae);
+		}
+	}
+}
+
+/* try-catch-finally
+ * try block : A block where a set of statements that are expected to occur are placed. It is always followed by a catch block.
+ * catch block : A block where you handle the exceptions. A single try block can have several catch blocks.
+ * try-catch : when an exception is occured during execution of the program in the try block, its corresponding catch block will be excuted
+ */
