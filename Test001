@@ -1,4 +1,4 @@
-ublic class test1 {
+ublic class test01 {
 
 	public static void main(String[] args) {
 		// <2>
