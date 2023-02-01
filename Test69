@@ -1,0 +1,26 @@
+import java.util.Vector;
+
+/* Vector
+ * - Vector uses a dynamic array (growable array of objects) to store the data elements
+ * - It is similar to ArrayList, but it is synchronized
+ * - It contains many methods that are not the part of collection framework
+ * Note: It is recommended to use the Vector class in the thread-safe implementation only.
+ * If you don't need to use thread-safe implementation, you should use the ArrayList, the ArrayList will perform better in such case.
+ */
+public class Test69 {
+
+	public static void main(String[] args) {
+		
+		//vector
+		
+		Vector <String> list = new Vector<String>(); // same output if you use 'ArrayList'
+		
+		list.add("Java");
+		list.add("spring");
+		list.add("Php");
+		list.add("spring");
+		list.add("Hibernate");
+
+		System.out.println(list);
+	}
+}
