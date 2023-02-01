@@ -1,0 +1,28 @@
+/* String class
+ * A String is a sequence of charactrs. But in Java String is an object that represents a sequence of character.
+ * String can be created in two different ways
+ * By using
+ *  - Literal: String s1 = "Hello"; --> String Pool
+ *  - New Keyword: String s2 = new String("Hi"); --> Java Heap
+ *  - Storage area: String can be stored in two different places
+ *  	1. String Pool(A part of heap)
+ *  	2. Java Heap
+ */
+public class Test56 {
+
+	public static void main(String[] args) {
+		// String class
+		String s1 = "Hello"; //literal
+		String s2 = "Hello";
+		String s3 = new String("Hi"); //new keyword
+		String s4 = new String("Hi");
+		
+		System.out.println(s1==s2); //true
+		System.out.println(s3==s4); //false
+	}
+
+}
+/* Why String is immutable in Java?
+ * As many reference variable Points to the same object,
+ * if any one reference variable is cvhanged then it will affect allt he reference variable
+ */
