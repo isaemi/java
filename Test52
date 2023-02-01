@@ -1,0 +1,34 @@
+//try
+//catch
+//finally
+public class Test52 {
+
+	public static void main(String[] args) {
+		try{
+			int []A = new int[-5];
+			A[2] = 25;
+			int x = A[2] / 0;
+			System.out.println("x = " + x);
+		}
+		catch(ArithmeticException ae)		//when A value is 2
+		{
+			System.out.println("/ by 0");
+		}
+		catch(ArrayIndexOutOfBoundsException ai)		//when A value is 8
+		{
+			System.out.println("in valid index");
+		}
+		catch(Exception c)		//when new int value is -5
+		{
+			System.out.println("Unknow Exception");
+		}
+		finally
+		{
+			System.out.println("***End of the Program***");
+		}
+	}
+}
+
+/* finally
+ * The statements present in this block will always execute regardless of whether exception occurs in try block or not such as closing a connection, stream etc.
+ */
