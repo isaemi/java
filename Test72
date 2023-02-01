@@ -1,0 +1,25 @@
+import java.util.LinkedHashSet;
+
+/* LinkedHashSet
+ * - LinkedHashSet class represents the LinkedList implementation of Set Interface
+ * - It extends the HashSet class and implements Set interface
+ * - It maintains the insertion order
+ * - It contains unique elements like HashSet
+ * - It can contain null values
+ */
+public class Test72 {
+
+	public static void main(String[] args) {
+		//LinkedHashSet
+		LinkedHashSet<String> hs = new LinkedHashSet<String>();
+		
+		hs.add("Java");
+		hs.add("Hibernate");
+		hs.add("spring");
+		hs.add("");
+		hs.add("Hibernate");
+		
+		System.out.println(hs);
+	}
+
+}
