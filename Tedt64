@@ -1,0 +1,55 @@
+//executing 2 Threads
+class MyThread3 implements Runnable
+{
+	public void run()
+	{
+		//code for thread
+		for(int i=1; i<=10; i++)
+		{
+			System.out.println("i = " + i);
+			try
+			{
+				//wating for 1 second
+				Thread.sleep(1000);
+			}
+			catch(Exception e)
+			{
+				
+			}
+		}
+	}
+}
+
+class MyThread4 extends Thread
+{
+	public void run()
+	{
+		//code for thread
+		for(int i=1; i<=10; i++)
+		{
+			System.out.println("i = " + i);
+			try
+			{
+				//wating for 1 second
+				Thread.sleep(1000);
+			}
+			catch(Exception e)
+			{
+				
+			}
+		}
+	}
+}
+public class Test64 {
+
+	public static void main(String[] args) 
+	{
+		MyThread3 t1 = new MyThread3(); //1st Thread
+		Thread thread = new Thread(t1);
+		MyThread4 m1 = new MyThread4(); //2nd Thread
+		thread.start(); //1st
+		m1.start(); //2nd
+	
+	}
+
+}
