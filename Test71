@@ -1,0 +1,38 @@
+import java.util.HashSet;
+
+/* Set Interface
+ * - Set interface extends the Collection interface
+ * - It is available in java.util.package
+ * - It is an ordered set of elements
+ * - It does not allow to store the duplicate elements
+ * - We can store null value in Set
+ * - It is implemented by HashSet, LinkHashSet and Treeset
+ * 	Set<data-type>s1 = new HashSet<data-type>();
+ *  Set<data-type>s2 = new LinkedHashSet<data-type>();
+ *  Set<data-type>s3 = new TreeSEt<data-type>();
+ */
+
+/* HashSet
+ * HashSet class implements Set interface
+ * It stores the elements by using a mechanism called hashing
+ * It contains unique items only
+ * It can contain null values
+ * It is non synchronized
+ * It is the best approach for search operations
+ */
+public class Test71 {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> hs = new HashSet<String>();
+		hs.add("Java");
+		hs.add("Hibernate");
+		hs.add("spring");
+		hs.add("");
+		hs.add("Hibernate");
+		
+		System.out.println(hs);
+
+	}
+
+}
