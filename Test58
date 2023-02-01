@@ -1,0 +1,17 @@
+/* Java StringBuffer Class
+ * StringBuffer is same with String, but it is mutable(changable)
+ * StringBuffer class is used to create mutable(modifiable)String Objects
+ * It is tread safe. Multiple threads cannot access it simultaneously
+ */
+public class Test58 {
+
+	public static void main(String[] args) {
+		
+		//String class
+		StringBuffer sb = new StringBuffer("Hello Everybody");
+		String s = new String("Hello");
+		sb.append("Everybody");
+		System.out.println(sb);
+	}
+
+}
