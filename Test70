@@ -1,0 +1,31 @@
+import java.util.Stack;
+
+/* stack
+ * - The stack is the subclass of vector
+ * - It implements the last-in-first-out data structure
+ * - It contains all the methods of vector class and also provides its methods like push(), pop() etc
+ * - The push operation inserts an element into the stack and pop operation removes an element from the top of the stack
+ */
+public class Test70 {
+
+	public static void main(String[] args) {
+		//stack
+		Stack<String> stk = new Stack<String>();
+		stk.push("Java");
+		stk.push("PHP");
+		stk.push("Hibernate");
+		stk.push("PHP");
+		stk.push("spring");
+
+		System.out.println(stk);
+		
+		stk.pop();
+		
+		System.out.println(stk);
+		
+		stk.pop();
+		
+		System.out.println(stk);
+	}
+
+}
