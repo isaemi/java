@@ -1,0 +1,29 @@
+//Exception handling - Unwanted event
+public class Test50 
+{
+
+	public static void main(String[] args) 
+	{
+		int x = 10, y = 0; //--> cannot devided zero
+		int z = x/y;
+		System.out.println("z = " + z);
+	}
+
+}
+
+/* What is an Exception?
+ * - An Exception is an unwatned event that interrupts the normal flow of the program.
+ * - The program execution gets terminated if any exception occurs.
+ * Reason of occuring Exception
+ * - Dividing a number by 0
+ * - Opening a non-existing file in the program
+ * - Network connection-problem
+ * - Bad input data provided by user
+ * Types of Exception
+ * 1. Checked Exception
+ * 	- identified by the compiler and checked that whether an exception has been handled or not and the compiler will force you to handle it.
+ * 	- For example, IOException, ClassNotFoundException, SQLException
+ * 2. Unchekced Exception
+ *  - Runtime Exception that cannot be identified by the compiloer. Compiler never forces you to handle such types of exceptions
+ *  - For example, NullPointerExceptionl, ArithmeticException, ArrayIndexOutOfBoundsException
+ */
