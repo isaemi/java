@@ -1,0 +1,20 @@
+/* Package - encapsulation mechanism, which is a collection of classes, enterprises and sub packages
+ * 1. Predifiend
+ *	- import java.util.*; 
+ *  - import java.io.*;
+ *  - import java.lang.*;
+ * 2. User defined
+*/
+package Pack2;
+import Pack1.*;
+public class Test48 {
+
+	public static void main(String[] args) {
+		
+		Test47 t1 = new Test47();
+		t1.showA();
+		
+		System.out.println("sum : " + t1.add(10,20));
+	}
+	
+}
