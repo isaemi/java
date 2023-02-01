@@ -1,0 +1,29 @@
+import java.util.TreeSet;
+
+/* TreeSet
+ * TreeSet class implements the Set interface that uses a tree for storage
+ * Like HashSet, TreeSet also contains unique elements
+ * However, the access and retrieval time of TreeSet is quite fast
+ * It doesn't allow null element
+ * class is non synchronized
+ * It maintains ascending order
+ */
+public class Test73 {
+
+	public static void main(String[] args) {
+		
+		//TreeSet
+		
+		TreeSet<String> ts = new TreeSet<String>();
+		
+
+		ts.add("Java");
+		ts.add("Hibernate");
+		ts.add("spring");
+		ts.add("");
+		ts.add("Hibernate");
+		
+		System.out.println(ts);
+	}
+
+}
