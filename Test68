@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+
+/* LinkedList
+ * - LinkedList implements the collection interface
+ * - It uses a doubly linked list internally to store the elements
+ * - It can store the duplicate elements
+ * - It maintains the insertion order
+ * - It is non synchronized
+ * - Here the manipulation is faster as it does not need shifting
+ */
+
+public class Test68 {
+
+	public static void main(String[] args) {
+		//ArrayList
+		LinkedList <String> list = new LinkedList<String>(); // same output if you use 'ArrayList'
+		list.add("Java");
+		list.add("spring");
+		list.add("Php");
+		list.add("spring");
+		list.add("Hibernate");
+
+		System.out.println(list);
+	}
+}
