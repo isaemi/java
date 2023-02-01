@@ -1,0 +1,21 @@
+/* Compares Method
+ * 1. equals() : Compares the values
+ * 2. == : Compares the reference
+ * 3. compareTo() : Compares the difference
+ * 	s1==s2	: returns 0 if equals
+ * 	s1>s2	: returns positive
+ * 	s1<s2	: returns negative
+ */
+public class Test57 {
+
+	public static void main(String[] args) {
+		// String class
+				String s1 = "Hello"; //literal
+				String s2 = new String("Hello"); //new keyword
+				
+				System.out.println(s1==s2); // Compares the reference --> false
+				System.out.println(s1.equals(s2)); //Compares the values --> true
+				System.out.println(s1.compareTo(s2)); // Compares the difference --> 0 (difference between caracters)
+	}
+
+}
