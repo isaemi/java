@@ -1,0 +1,20 @@
+//custom exception
+class InvalidMarkException extends Exception
+{
+	InvalidMarkException (String s)
+	{
+		super(s);
+	}
+}
+public class Test55 {
+
+	public static void main(String[] args) throws InvalidMarkException {
+		
+		int mark = 500;
+		if(mark<0 || mark>100)
+			throw new InvalidMarkException("you have entered an invaid mark");
+		else
+			System.out.println("Mark : " + mark);
+	}
+
+}
