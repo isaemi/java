@@ -1,0 +1,29 @@
+/* Multithreading
+ * - Multithreading in java is a process of executing multiple Threads simultaneously.
+ *   For an example one thread will be downloading files another will be playing song etc
+ * - A thread is a lightweight sub-process, the smallest unit processing
+ */
+
+/* Creating Threads in java
+ * 1. Runnable (Interface)
+ * 2. Thread (Class)
+ */
+
+//2. Thread (Class)
+
+class MyThread extends Thread
+{
+	public void run()
+	{
+		//code
+	}
+}
+
+class Test61 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
