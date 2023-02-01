@@ -1,0 +1,53 @@
+//Encapsulation
+class Customer3
+{
+	private int id;		//if private is deleted, data can be stored
+	private String name;
+	private int orderId;
+	
+	//Setting data
+	public void setID(int id) {
+		this.id = id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setOrderId(int orderId)
+	{
+		this.orderId = orderId;
+	}
+	
+	//Getting data
+	public int getId()
+	{
+		return id;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public int getOrderId()
+	{
+		return orderId;
+	}
+}
+public class Test46 {
+
+	public static void main(String[] args) {
+		
+		Customer3 c1 = new Customer3();
+		
+		//c1.id = 444; --> if private is deleted, data can be stored 
+		//setting of the c1 object
+		c1.setID(111);
+		c1.setName("Saemi");
+		c1.setOrderId(1234);
+		
+		System.out.println("Customet ID : " + c1.getId());
+		System.out.println("Customer Name : " + c1.getName());
+		System.out.println("Customer Order ID : " + c1.getOrderId());		
+		
+
+	}
+
+}
