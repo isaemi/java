@@ -1,0 +1,17 @@
+//throw
+//throws
+//custom
+
+//throw
+public class Test53 {
+
+	public static void main(String[] args) {
+		int mark = 600;
+		if (mark<0 || mark>100)
+			throw new ArithmeticException("You have entered an invalid mark");
+		else
+			System.out.println("Mark : " + mark);
+
+	}
+
+}
