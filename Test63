@@ -1,0 +1,30 @@
+//creating our Thread using Thread class
+class MyThread2 extends Thread
+{
+	public void run()
+	{
+		//code for thread
+		for(int i=0; i<=10; i++)
+		{
+			System.out.println("i = " + i);
+			try
+			{
+				//wating for 1 second
+				Thread.sleep(1000);
+			}
+			catch(Exception e)
+			{
+				
+			}
+		}
+	}
+}
+public class Test63 {
+
+	public static void main(String[] args) {
+		MyThread2 m1 = new MyThread2();
+		m1.start();
+
+	}
+
+}
