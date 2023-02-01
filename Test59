@@ -1,0 +1,15 @@
+/* Java StringBuilder Class
+ * String Builder is same with StringBuffer except that it is non-synchronized
+ * A non-synchronized class is not thread-safe
+ * StringBuilder class is used to create mutable(modifiable)String Objects.
+ */
+public class Test59 {
+
+	public static void main(String[] args) {
+		
+		StringBuilder sb = new StringBuilder("Hello");
+		sb.insert(1, "Pikul");
+		System.out.println(sb);
+	}
+
+}
