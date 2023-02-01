@@ -1,0 +1,31 @@
+//throw
+//throws
+//custom
+
+//throws
+class Example54
+{
+	void printString(String s) throws NullPointerException
+	{
+		if(s==null)
+			throw new NullPointerException("Invalid String");
+		System.out.println(s);
+	}
+}
+public class Test54
+{
+
+	public static void main(String[] args) {
+		try
+		{
+			Example54 e1 = new Example54();
+			String s= null;
+			e1.printString(s);
+		}
+		catch (NullPointerException n)
+		{
+			System.out.println(n);
+		}
+	}
+
+}
