@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/* List Interface
+ * The List interface is found in java.util package and inherits the Collection interface
+ * It is an ordered collection of objects in which duplicate values can be stored
+ * The implementation classes of the List interface are ArrayList, LinkedList, Stack, and Vector
+ * List interface is implemented by the following classes
+ * 	List<data-type>list1 = new ArrayList();
+ *  List<data-type>list2 = new LinkedList();
+ *  List<data-type>list3 = new Vector();
+ *  List<data-type>list4 = new Stack();
+ */
+
+class Test66 {
+
+	public static void main(String[] args) {
+		//List interface
+		List <Integer> list = new ArrayList();
+	
+	}
+
+}
